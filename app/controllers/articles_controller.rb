@@ -4,7 +4,16 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    @article_metadata = []
+    response = HTTParty.get("http://api.nytimes.com/svc/search/v2/articlesearch.json?q=obama&begin_date=20141201&end_date=20141213&api-key=57a29334498a380ff95dcd0d7b41ba9b%3A19%3A70275971")
+    first_four = response['response']['docs'].reject {|article| article['multimedia'].empty?}.take(4)
+    first_four.each do |article|
+      article_metadatum = {
+        :headline => article['headline']['main'],
+        :image => article['multimedia'].select{|img| img['width'] == 600 && img['subtype'] == 'xlarge'}.first['url']
+      }
+      @article_metadata << article_metadatum
+    end
   end
 
   # GET /articles/1
