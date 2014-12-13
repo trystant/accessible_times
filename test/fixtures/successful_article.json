@@ -1,0 +1,910 @@
+{
+    "response": {
+        "meta": {
+            "hits": 854,
+            "time": 25,
+            "offset": 0
+        },
+        "docs": [{
+            "web_url": "http:\/\/www.nytimes.com\/2014\/12\/10\/opinion\/the-senate-report-on-the-cias-torture-and-lies.html",
+            "snippet": "A Senate committee&#8217;s investigation is a portrait of depravity that is hard to comprehend.",
+            "lead_paragraph": "A Senate committee&#8217;s investigation is a portrait of depravity that is hard to comprehend.",
+            "abstract": "Editorial contends that summary of Senate investigation report into Central Intelligence Agency's torture and illegal detention of prisoners is portrait of depravity; questions why no one has ever been held accountable for these seeming crimes; laments that nothing is likely to be done now, given that Republicans will soon control Senate.",
+            "print_page": "34",
+            "blog": [],
+            "source": "The New York Times",
+            "multimedia": [{
+                "width": 190,
+                "url": "images\/2014\/12\/10\/opinion\/10wed1sub\/10wed1sub-thumbWide.jpg",
+                "height": 126,
+                "subtype": "wide",
+                "legacy": {
+                    "wide": "images\/2014\/12\/10\/opinion\/10wed1sub\/10wed1sub-thumbWide.jpg",
+                    "wideheight": "126",
+                    "widewidth": "190"
+                },
+                "type": "image"
+            }, {
+                "width": 600,
+                "url": "images\/2014\/12\/10\/opinion\/10wed1sub\/10wed1sub-articleLarge.jpg",
+                "height": 463,
+                "subtype": "xlarge",
+                "legacy": {
+                    "xlargewidth": "600",
+                    "xlarge": "images\/2014\/12\/10\/opinion\/10wed1sub\/10wed1sub-articleLarge.jpg",
+                    "xlargeheight": "463"
+                },
+                "type": "image"
+            }, {
+                "width": 75,
+                "url": "images\/2014\/12\/10\/opinion\/10wed1sub\/10wed1sub-thumbStandard.jpg",
+                "height": 75,
+                "subtype": "thumbnail",
+                "legacy": {
+                    "thumbnailheight": "75",
+                    "thumbnail": "images\/2014\/12\/10\/opinion\/10wed1sub\/10wed1sub-thumbStandard.jpg",
+                    "thumbnailwidth": "75"
+                },
+                "type": "image"
+            }],
+            "headline": {
+                "main": "The Senate Report on the C.I.A.\u2019s Torture and Lies",
+                "content_kicker": "Editorial",
+                "kicker": "Editorial",
+                "print_headline": "A Record of Torture and Lies "
+            },
+            "keywords": [{
+                "rank": "1",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Editorials"
+            }, {
+                "rank": "2",
+                "is_major": "Y",
+                "name": "organizations",
+                "value": "Central Intelligence Agency"
+            }, {
+                "rank": "3",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Detainees"
+            }, {
+                "rank": "4",
+                "is_major": "N",
+                "name": "persons",
+                "value": "Obama, Barack"
+            }, {
+                "rank": "5",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Terrorism"
+            }, {
+                "rank": "6",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Interrogations"
+            }, {
+                "rank": "7",
+                "is_major": "N",
+                "name": "organizations",
+                "value": "Senate Committee on Intelligence"
+            }, {
+                "rank": "8",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Torture"
+            }],
+            "pub_date": "2014-12-10T00:00:00Z",
+            "document_type": "article",
+            "news_desk": "Editorial",
+            "section_name": "Opinion",
+            "subsection_name": null,
+            "byline": {
+                "contributor": "",
+                "person": [],
+                "original": "By THE EDITORIAL BOARD",
+                "organization": "THE EDITORIAL BOARD"
+            },
+            "type_of_material": "Editorial",
+            "_id": "5487347a38f0d8602128ddc7",
+            "word_count": "957"
+        }, {
+            "web_url": "http:\/\/www.nytimes.com\/2014\/12\/07\/opinion\/sunday\/thomas-l-friedman-how-isis-drives-muslims-from-islam.html",
+            "snippet": "Young Arabs are boldly speaking out against rule by Shariah.",
+            "lead_paragraph": "Young Arabs are boldly speaking out against rule by Shariah.",
+            "abstract": "Thomas L Friedman Op-Ed column highlights the online backlash against Islamic State by young Muslims declaring their opposition to rule by Islamic law; observes that Islamic State has blown lid off some long simmering frustration in Arab world by claiming to speak for all Muslims and promoting puritanical form of Islam.",
+            "print_page": "11",
+            "blog": [],
+            "source": "The New York Times",
+            "multimedia": [{
+                "width": 190,
+                "url": "images\/2014\/12\/07\/sunday-review\/07friedman\/07friedman-thumbWide.jpg",
+                "height": 126,
+                "subtype": "wide",
+                "legacy": {
+                    "wide": "images\/2014\/12\/07\/sunday-review\/07friedman\/07friedman-thumbWide.jpg",
+                    "wideheight": "126",
+                    "widewidth": "190"
+                },
+                "type": "image"
+            }, {
+                "width": 600,
+                "url": "images\/2014\/12\/07\/sunday-review\/07friedman\/07friedman-articleLarge.jpg",
+                "height": 405,
+                "subtype": "xlarge",
+                "legacy": {
+                    "xlargewidth": "600",
+                    "xlarge": "images\/2014\/12\/07\/sunday-review\/07friedman\/07friedman-articleLarge.jpg",
+                    "xlargeheight": "405"
+                },
+                "type": "image"
+            }, {
+                "width": 75,
+                "url": "images\/2014\/12\/07\/sunday-review\/07friedman\/07friedman-thumbStandard.jpg",
+                "height": 75,
+                "subtype": "thumbnail",
+                "legacy": {
+                    "thumbnailheight": "75",
+                    "thumbnail": "images\/2014\/12\/07\/sunday-review\/07friedman\/07friedman-thumbStandard.jpg",
+                    "thumbnailwidth": "75"
+                },
+                "type": "image"
+            }],
+            "headline": {
+                "main": "How ISIS Drives Muslims From Islam",
+                "content_kicker": "Op-Ed Columnist",
+                "kicker": "Op-Ed Columnist",
+                "print_headline": "How ISIS Drives Muslims From Islam"
+            },
+            "keywords": [{
+                "rank": "1",
+                "is_major": "Y",
+                "name": "organizations",
+                "value": "Islamic State in Iraq and Syria (ISIS)"
+            }, {
+                "rank": "2",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Muslims and Islam"
+            }, {
+                "rank": "3",
+                "is_major": "N",
+                "name": "subject",
+                "value": "International Relations"
+            }, {
+                "rank": "4",
+                "is_major": "N",
+                "name": "organizations",
+                "value": "Boko Haram"
+            }, {
+                "rank": "5",
+                "is_major": "N",
+                "name": "organizations",
+                "value": "Al Qaeda"
+            }, {
+                "rank": "6",
+                "is_major": "N",
+                "name": "organizations",
+                "value": "Taliban"
+            }, {
+                "rank": "7",
+                "is_major": "N",
+                "name": "organizations",
+                "value": "Shabab"
+            }, {
+                "rank": "8",
+                "is_major": "N",
+                "name": "persons",
+                "value": "Obama, Barack"
+            }],
+            "pub_date": "2014-12-07T00:00:00Z",
+            "document_type": "article",
+            "news_desk": "Editorial",
+            "section_name": "Opinion",
+            "subsection_name": "Sunday Review",
+            "byline": {
+                "contributor": "",
+                "person": [{
+                    "firstname": "Thomas",
+                    "middlename": "L.",
+                    "lastname": "FRIEDMAN",
+                    "rank": 1,
+                    "role": "reported",
+                    "organization": ""
+                }],
+                "original": "By THOMAS L. FRIEDMAN"
+            },
+            "type_of_material": "Op-Ed",
+            "_id": "5483594238f0d80df4fa364c",
+            "word_count": "890"
+        }, {
+            "web_url": "http:\/\/www.nytimes.com\/2014\/12\/08\/business\/obamas-net-neutrality-bid-divides-civil-rights-groups.html",
+            "snippet": "The vision for regulation of the Internet has met with opposition from the N.A.A.C.P. and the Rainbow\/PUSH Coalition, while other civil rights groups support treating Internet access as an essential service.",
+            "lead_paragraph": "The vision for regulation of the Internet has met with opposition from the N.A.A.C.P. and the Rainbow\/PUSH Coalition, while other civil rights groups support treating Internet access as an essential service.",
+            "abstract": "NAACP, National Urban League and Rainbow\/PUSH Coalition say Pres Obama's push to regulate Internet access will hurt minority communities, but other civil rights groups back treating Internet access as an essential service; debate is part of major campaign to lobby Federal Communications Commission as it considers net neutrality.",
+            "print_page": "1",
+            "blog": [],
+            "source": "The New York Times",
+            "multimedia": [{
+                "width": 190,
+                "url": "images\/2014\/12\/08\/business\/netlobbyingjump\/netlobbyingjump-thumbWide.jpg",
+                "height": 126,
+                "subtype": "wide",
+                "legacy": {
+                    "wide": "images\/2014\/12\/08\/business\/netlobbyingjump\/netlobbyingjump-thumbWide.jpg",
+                    "wideheight": "126",
+                    "widewidth": "190"
+                },
+                "type": "image"
+            }, {
+                "width": 600,
+                "url": "images\/2014\/12\/08\/business\/netlobbyingjump\/netlobbyingjump-articleLarge.jpg",
+                "height": 400,
+                "subtype": "xlarge",
+                "legacy": {
+                    "xlargewidth": "600",
+                    "xlarge": "images\/2014\/12\/08\/business\/netlobbyingjump\/netlobbyingjump-articleLarge.jpg",
+                    "xlargeheight": "400"
+                },
+                "type": "image"
+            }, {
+                "width": 75,
+                "url": "images\/2014\/12\/08\/business\/netlobbyingjump\/netlobbyingjump-thumbStandard.jpg",
+                "height": 75,
+                "subtype": "thumbnail",
+                "legacy": {
+                    "thumbnailheight": "75",
+                    "thumbnail": "images\/2014\/12\/08\/business\/netlobbyingjump\/netlobbyingjump-thumbStandard.jpg",
+                    "thumbnailwidth": "75"
+                },
+                "type": "image"
+            }],
+            "headline": {
+                "main": "Obama&#8217;s Net Neutrality Bid Divides Civil Rights Groups ",
+                "print_headline": "Obama\u2019s Net Neutrality Bid Divides Civil Rights Groups"
+            },
+            "keywords": [{
+                "rank": "1",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Net Neutrality"
+            }, {
+                "rank": "11",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Regulation and Deregulation of Industry"
+            }, {
+                "rank": "2",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Minorities"
+            }, {
+                "rank": "3",
+                "is_major": "Y",
+                "name": "organizations",
+                "value": "Federal Communications Commission"
+            }, {
+                "rank": "4",
+                "is_major": "Y",
+                "name": "organizations",
+                "value": "National Assn for the Advancement of Colored People"
+            }, {
+                "rank": "5",
+                "is_major": "Y",
+                "name": "organizations",
+                "value": "Rainbow\/PUSH Coalition"
+            }, {
+                "rank": "6",
+                "is_major": "Y",
+                "name": "organizations",
+                "value": "National Urban League"
+            }, {
+                "rank": "7",
+                "is_major": "N",
+                "name": "persons",
+                "value": "Obama, Barack"
+            }, {
+                "rank": "8",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Blacks"
+            }, {
+                "rank": "9",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Computers and the Internet"
+            }, {
+                "rank": "10",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Lobbying and Lobbyists"
+            }],
+            "pub_date": "2014-12-08T00:00:00Z",
+            "document_type": "article",
+            "news_desk": "Business",
+            "section_name": "Business Day",
+            "subsection_name": null,
+            "byline": {
+                "contributor": "",
+                "person": [{
+                    "organization": "",
+                    "role": "reported",
+                    "firstname": "Edward",
+                    "rank": 1,
+                    "lastname": "WYATT"
+                }],
+                "original": "By EDWARD WYATT"
+            },
+            "type_of_material": "News",
+            "_id": "5484db3238f0d84e18ddf71a",
+            "word_count": "1083"
+        }, {
+            "web_url": "http:\/\/www.nytimes.com\/politics\/first-draft\/2014\/12\/08\/a-cheaper-way-to-travel-with-the-president-but-at-a-cost\/",
+            "snippet": "White House reporters who went on President Obama\u2019s trip to China, Myanmar and Australia last month were in for a surprise when they saw the bill: For example, a trip that was estimated to cost The New York Times an eye-popping $60,000 wound up...",
+            "lead_paragraph": null,
+            "abstract": "White House reporters who went on President Obama\u2019s trip to China, Myanmar and Australia last month were in for a surprise when they saw the bill: For example, a trip that was estimated to cost The New York Times an eye-popping $60,000 wound up costing $92,111. We thought we\u2019d see whether we could make the same trip flying commercially, and determine how much money could be saved.",
+            "print_page": null,
+            "blog": [],
+            "source": "The New York Times",
+            "multimedia": [],
+            "headline": {
+                "main": "What an Extra $86,824 Gets a Reporter on an Obama Trip",
+                "kicker": "First Draft"
+            },
+            "keywords": [{
+                "rank": "1",
+                "name": "subject",
+                "value": "Air Force One (Jet)"
+            }, {
+                "rank": "2",
+                "name": "subject",
+                "value": "Obama, Barack"
+            }],
+            "pub_date": "2014-12-08T15:43:32Z",
+            "document_type": "blogpost",
+            "news_desk": null,
+            "section_name": null,
+            "subsection_name": null,
+            "byline": {
+                "person": [{
+                    "organization": "",
+                    "role": "reported",
+                    "firstname": "Andrew",
+                    "rank": 1,
+                    "lastname": "SIDDONS"
+                }],
+                "original": "By ANDREW SIDDONS"
+            },
+            "type_of_material": "Blog",
+            "_id": "54860df638f0d8164e21dca5",
+            "word_count": "81"
+        }, {
+            "web_url": "http:\/\/www.nytimes.com\/2014\/12\/09\/us\/politics\/unrest-over-race-is-testing-obamas-legacy-.html",
+            "snippet": "White House advisers say that addressing the nation\u2019s racial conflicts is now an imperative for the president\u2019s final years in office.",
+            "lead_paragraph": "White House advisers say that addressing the nation\u2019s racial conflicts is now an imperative for the president\u2019s final years in office.",
+            "abstract": "African-American activists express disappointment at Pres Obama's perceived reluctance to address nation's racial conflicts; Obama has not stood behind protesters or linked arms with civil rights leaders in days since grand juries in Missouri and Staten Island decided not to bring charges against white police officers linked to fatal encounters with unarmed black men; few of Obama's aides dispute that he is personally conflicted and constrained by position he holds.",
+            "print_page": "1",
+            "blog": [],
+            "source": "The New York Times",
+            "multimedia": [{
+                "width": 190,
+                "url": "images\/2014\/12\/09\/us\/JP-OBAMA1\/JP-OBAMA1-thumbWide.jpg",
+                "height": 126,
+                "subtype": "wide",
+                "legacy": {
+                    "wide": "images\/2014\/12\/09\/us\/JP-OBAMA1\/JP-OBAMA1-thumbWide.jpg",
+                    "wideheight": "126",
+                    "widewidth": "190"
+                },
+                "type": "image"
+            }, {
+                "width": 600,
+                "url": "images\/2014\/12\/09\/us\/JP-OBAMA1\/JP-OBAMA1-articleLarge.jpg",
+                "height": 400,
+                "subtype": "xlarge",
+                "legacy": {
+                    "xlargewidth": "600",
+                    "xlarge": "images\/2014\/12\/09\/us\/JP-OBAMA1\/JP-OBAMA1-articleLarge.jpg",
+                    "xlargeheight": "400"
+                },
+                "type": "image"
+            }, {
+                "width": 75,
+                "url": "images\/2014\/12\/09\/us\/JP-OBAMA1\/JP-OBAMA1-thumbStandard.jpg",
+                "height": 75,
+                "subtype": "thumbnail",
+                "legacy": {
+                    "thumbnailheight": "75",
+                    "thumbnail": "images\/2014\/12\/09\/us\/JP-OBAMA1\/JP-OBAMA1-thumbStandard.jpg",
+                    "thumbnailwidth": "75"
+                },
+                "type": "image"
+            }],
+            "headline": {
+                "main": "Unrest Over Race Is Testing Obama&#8217;s Legacy ",
+                "print_headline": "Unrest Over Race Is Testing Obama\u2019s Legacy"
+            },
+            "keywords": [{
+                "rank": "1",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Race and Ethnicity"
+            }, {
+                "rank": "2",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Blacks"
+            }, {
+                "rank": "3",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Police Brutality, Misconduct and Shootings"
+            }, {
+                "rank": "4",
+                "is_major": "Y",
+                "name": "persons",
+                "value": "Obama, Barack"
+            }, {
+                "rank": "5",
+                "is_major": "N",
+                "name": "subject",
+                "value": "United States Politics and Government"
+            }],
+            "pub_date": "2014-12-09T00:00:00Z",
+            "document_type": "article",
+            "news_desk": "National",
+            "section_name": "U.S.",
+            "subsection_name": "Politics",
+            "byline": {
+                "contributor": "",
+                "person": [{
+                    "firstname": "Julie",
+                    "middlename": "Hirschfeld",
+                    "lastname": "DAVIS",
+                    "rank": 1,
+                    "role": "reported",
+                    "organization": ""
+                }, {
+                    "organization": "",
+                    "role": "reported",
+                    "firstname": "Michael",
+                    "rank": 2
+                }],
+                "original": "By JULIE HIRSCHFELD DAVIS and MICHAEL D. SHEAR"
+            },
+            "type_of_material": "News",
+            "_id": "548663c238f0d8164e21e0de",
+            "word_count": "1189"
+        }, {
+            "web_url": "http:\/\/www.nytimes.com\/2014\/12\/08\/us\/politics\/for-obama-a-go-it-alone-push-fits-the-times.html",
+            "snippet": "President Obama, once determined to change a political system &#8220;that&#8217;s divided us for too long,&#8221; has adopted an unconciliatory strategy for achieving his goals.",
+            "lead_paragraph": "President Obama, once determined to change a political system &#8220;that&#8217;s divided us for too long,&#8221; has adopted an unconciliatory strategy for achieving his goals.",
+            "abstract": "Political Memo; Pres Obama's immigration action made clear his determination to direct his focus on his governing objectives, despite bludgeoning Democratic Party suffered in midterms; Obama has appeared to conclude that pursuing bipartisan reconciliation in his final two years in office is a fool's chase and has turned instead on advancing the policy goals he embraced as a candidate.",
+            "print_page": "14",
+            "blog": [],
+            "source": "The New York Times",
+            "multimedia": [{
+                "width": 190,
+                "url": "images\/2014\/12\/08\/us\/MEMO\/MEMO-thumbWide.jpg",
+                "height": 126,
+                "subtype": "wide",
+                "legacy": {
+                    "wide": "images\/2014\/12\/08\/us\/MEMO\/MEMO-thumbWide.jpg",
+                    "wideheight": "126",
+                    "widewidth": "190"
+                },
+                "type": "image"
+            }, {
+                "width": 600,
+                "url": "images\/2014\/12\/08\/us\/MEMO\/MEMO-articleLarge.jpg",
+                "height": 400,
+                "subtype": "xlarge",
+                "legacy": {
+                    "xlargewidth": "600",
+                    "xlarge": "images\/2014\/12\/08\/us\/MEMO\/MEMO-articleLarge.jpg",
+                    "xlargeheight": "400"
+                },
+                "type": "image"
+            }, {
+                "width": 75,
+                "url": "images\/2014\/12\/08\/us\/MEMO\/MEMO-thumbStandard-v2.jpg",
+                "height": 75,
+                "subtype": "thumbnail",
+                "legacy": {
+                    "thumbnailheight": "75",
+                    "thumbnail": "images\/2014\/12\/08\/us\/MEMO\/MEMO-thumbStandard-v2.jpg",
+                    "thumbnailwidth": "75"
+                },
+                "type": "image"
+            }],
+            "headline": {
+                "main": "For Obama, a Go-It-Alone Push Fits the Times",
+                "content_kicker": "Political Memo",
+                "kicker": "Political Memo",
+                "print_headline": "A Go-It-Alone Push Fits the Times"
+            },
+            "keywords": [{
+                "rank": "1",
+                "is_major": "Y",
+                "name": "persons",
+                "value": "Obama, Barack"
+            }, {
+                "rank": "2",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Immigration and Emigration"
+            }, {
+                "rank": "3",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "United States Politics and Government"
+            }, {
+                "rank": "4",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Presidents and Presidency (US)"
+            }, {
+                "rank": "5",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Midterm Elections (2014)"
+            }, {
+                "rank": "6",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Patient Protection and Affordable Care Act (2010)"
+            }],
+            "pub_date": "2014-12-08T00:00:00Z",
+            "document_type": "article",
+            "news_desk": "National",
+            "section_name": "U.S.",
+            "subsection_name": "Politics",
+            "byline": {
+                "contributor": "",
+                "person": [{
+                    "organization": "",
+                    "role": "reported",
+                    "firstname": "John",
+                    "rank": 1,
+                    "lastname": "HARWOOD"
+                }],
+                "original": "By JOHN HARWOOD"
+            },
+            "type_of_material": "News",
+            "_id": "5484ff0838f0d84e18ddfb38",
+            "word_count": "940"
+        }, {
+            "web_url": "http:\/\/www.nytimes.com\/2014\/12\/07\/us\/obama-visits-military-hospital-for-sore-throat.html",
+            "snippet": "The president, who has had very few medical problems during his nearly six years in office, appeared to have symptoms of acid reflux, officials said.",
+            "lead_paragraph": "The president, who has had very few medical problems during his nearly six years in office, appeared to have symptoms of acid reflux, officials said.",
+            "abstract": "Pres Obama is found to have symptoms indicating acid reflux after complaining of sore throat.",
+            "print_page": "35",
+            "blog": [],
+            "source": "The New York Times",
+            "multimedia": [],
+            "headline": {
+                "main": "Obama Is Found to Have Symptoms of Acid Reflux",
+                "print_headline": "Obama is Found to Have Symptoms of Acid Reflux"
+            },
+            "keywords": [{
+                "rank": "1",
+                "is_major": "Y",
+                "name": "persons",
+                "value": "Obama, Barack"
+            }, {
+                "rank": "2",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Gastroesophageal Reflux (Acid Reflux)"
+            }, {
+                "rank": "3",
+                "is_major": "N",
+                "name": "organizations",
+                "value": "Reed, Walter, National Military Medical Center"
+            }, {
+                "rank": "4",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Tests (Medical)"
+            }],
+            "pub_date": "2014-12-07T00:00:00Z",
+            "document_type": "article",
+            "news_desk": "National",
+            "section_name": "U.S.",
+            "subsection_name": null,
+            "byline": {
+                "contributor": "Lawrence K. Altman contributed reporting.",
+                "person": [{
+                    "organization": "",
+                    "role": "reported",
+                    "firstname": "Mark",
+                    "rank": 1,
+                    "lastname": "LANDLER"
+                }],
+                "original": "By MARK LANDLER"
+            },
+            "type_of_material": "News",
+            "_id": "5483907838f0d80df4fa3c71",
+            "word_count": "342"
+        }, {
+            "web_url": "http:\/\/www.nytimes.com\/video\/us\/100000003265094\/obama-calls-for-body-cameras-on-police.html",
+            "snippet": "At a meeting of civil rights leaders and law enforcement officials, President Obama described plans to address what he called a \u201csimmering distrust\u201d between police departments and people of color.",
+            "lead_paragraph": "At a meeting of civil rights leaders and law enforcement officials, President Obama described plans to address what he called a \u201csimmering distrust\u201d between police departments and people of color.",
+            "abstract": null,
+            "print_page": null,
+            "blog": [],
+            "source": "The New York Times",
+            "multimedia": [{
+                "width": 190,
+                "url": "images\/2014\/12\/01\/multimedia\/obama-police-cameras\/obama-police-cameras-thumbWide-v3.jpg",
+                "height": 126,
+                "subtype": "wide",
+                "legacy": {
+                    "wide": "images\/2014\/12\/01\/multimedia\/obama-police-cameras\/obama-police-cameras-thumbWide-v3.jpg",
+                    "wideheight": "126",
+                    "widewidth": "190"
+                },
+                "type": "image"
+            }, {
+                "width": 600,
+                "url": "images\/2014\/12\/01\/multimedia\/obama-police-cameras\/obama-police-cameras-articleLarge.jpg",
+                "height": 369,
+                "subtype": "xlarge",
+                "legacy": {
+                    "xlargewidth": "600",
+                    "xlarge": "images\/2014\/12\/01\/multimedia\/obama-police-cameras\/obama-police-cameras-articleLarge.jpg",
+                    "xlargeheight": "369"
+                },
+                "type": "image"
+            }, {
+                "width": 75,
+                "url": "images\/2014\/12\/01\/multimedia\/obama-police-cameras\/obama-police-cameras-thumbStandard-v3.jpg",
+                "height": 75,
+                "subtype": "thumbnail",
+                "legacy": {
+                    "thumbnailheight": "75",
+                    "thumbnail": "images\/2014\/12\/01\/multimedia\/obama-police-cameras\/obama-police-cameras-thumbStandard-v3.jpg",
+                    "thumbnailwidth": "75"
+                },
+                "type": "image"
+            }],
+            "headline": {
+                "main": "Obama Calls for Body Cameras on Police"
+            },
+            "keywords": [{
+                "rank": "1",
+                "is_major": "N",
+                "name": "subject",
+                "value": "United States Politics and Government"
+            }, {
+                "rank": "2",
+                "is_major": "N",
+                "name": "persons",
+                "value": "Obama, Barack"
+            }, {
+                "rank": "3",
+                "is_major": "N",
+                "name": "glocations",
+                "value": "Ferguson (Mo)"
+            }, {
+                "rank": "4",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Police"
+            }, {
+                "rank": "5",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Civil Rights and Liberties"
+            }],
+            "pub_date": "2014-12-01T19:37:39Z",
+            "document_type": "multimedia",
+            "news_desk": "U.S.",
+            "section_name": "U.S.",
+            "subsection_name": null,
+            "byline": {
+                "person": [],
+                "original": "Reuters",
+                "organization": "Reuters"
+            },
+            "type_of_material": "Video",
+            "_id": "547d09f438f0d822abda1aed",
+            "word_count": "30"
+        }, {
+            "web_url": "http:\/\/www.nytimes.com\/2014\/12\/03\/us\/at-nih-obama-stresses-need-to-keep-funding-fight-against-ebola.html",
+            "snippet": "President Obama on Tuesday praised researchers for their progress in developing a potential vaccine for Ebola and called on Congress to pass $6.2 billion in emergency funds to fight the virus.",
+            "lead_paragraph": "President Obama on Tuesday praised researchers for their progress in developing a potential vaccine for Ebola and called on Congress to pass $6.2 billion in emergency funds to fight the virus.",
+            "abstract": "Pres Obama uses visit to National Institutes of Health to praise researchers for progress in developing vaccine for Ebola; calls on Congress to pass $6.2 billion in emergency funds to fight virus.",
+            "print_page": "20",
+            "blog": [],
+            "source": "The New York Times",
+            "multimedia": [{
+                "width": 190,
+                "url": "images\/2014\/12\/03\/us\/OBAMA\/OBAMA-thumbWide.jpg",
+                "height": 126,
+                "subtype": "wide",
+                "legacy": {
+                    "wide": "images\/2014\/12\/03\/us\/OBAMA\/OBAMA-thumbWide.jpg",
+                    "wideheight": "126",
+                    "widewidth": "190"
+                },
+                "type": "image"
+            }, {
+                "width": 600,
+                "url": "images\/2014\/12\/03\/us\/OBAMA\/OBAMA-articleLarge.jpg",
+                "height": 400,
+                "subtype": "xlarge",
+                "legacy": {
+                    "xlargewidth": "600",
+                    "xlarge": "images\/2014\/12\/03\/us\/OBAMA\/OBAMA-articleLarge.jpg",
+                    "xlargeheight": "400"
+                },
+                "type": "image"
+            }, {
+                "width": 75,
+                "url": "images\/2014\/12\/03\/us\/OBAMA\/OBAMA-thumbStandard.jpg",
+                "height": 75,
+                "subtype": "thumbnail",
+                "legacy": {
+                    "thumbnailheight": "75",
+                    "thumbnail": "images\/2014\/12\/03\/us\/OBAMA\/OBAMA-thumbStandard.jpg",
+                    "thumbnailwidth": "75"
+                },
+                "type": "image"
+            }],
+            "headline": {
+                "main": "At N.I.H., Obama Stresses Need to Keep Funding Fight Against Ebola ",
+                "print_headline": "At N.I.H., Obama Stresses Need to Keep Funding Fight Against Ebola"
+            },
+            "keywords": [{
+                "rank": "1",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Ebola Virus"
+            }, {
+                "rank": "2",
+                "is_major": "Y",
+                "name": "subject",
+                "value": "Vaccination and Immunization"
+            }, {
+                "rank": "3",
+                "is_major": "Y",
+                "name": "organizations",
+                "value": "National Institutes of Health"
+            }, {
+                "rank": "4",
+                "is_major": "N",
+                "name": "glocations",
+                "value": "Africa"
+            }, {
+                "rank": "5",
+                "is_major": "N",
+                "name": "persons",
+                "value": "Obama, Barack"
+            }],
+            "pub_date": "2014-12-03T00:00:00Z",
+            "document_type": "article",
+            "news_desk": "National",
+            "section_name": "U.S.",
+            "subsection_name": null,
+            "byline": {
+                "contributor": "",
+                "person": [{
+                    "organization": "",
+                    "role": "reported",
+                    "firstname": "Mark",
+                    "rank": 1,
+                    "lastname": "LANDLER"
+                }],
+                "original": "By MARK LANDLER"
+            },
+            "type_of_material": "News",
+            "_id": "547e6e0738f0d84a61c0e97f",
+            "word_count": "642"
+        }, {
+            "web_url": "http:\/\/www.nytimes.com\/2014\/12\/12\/us\/politics\/senate-panel-approves-limited-fight-against-isis-reopening-war-powers-debate.html",
+            "snippet": "The party-line vote put on display an unusual alliance between some Democrats and Republicans on the role of Congress in deciding to go into battle.",
+            "lead_paragraph": "The party-line vote put on display an unusual alliance between some Democrats and Republicans on the role of Congress in deciding to go into battle.",
+            "abstract": "Senate Foreign Relations Committee votes to authorize military campaign against Islamic State; 10-to-8 vote illuminates unexpected alliance between some Democrats and some Republicans in debate over role of Congress in making and approving decision to go to war.",
+            "print_page": "23",
+            "blog": [],
+            "source": "The New York Times",
+            "multimedia": [{
+                "width": 190,
+                "url": "images\/2014\/12\/12\/us\/WARPOWERS1\/WARPOWERS1-thumbWide.jpg",
+                "height": 126,
+                "subtype": "wide",
+                "legacy": {
+                    "wide": "images\/2014\/12\/12\/us\/WARPOWERS1\/WARPOWERS1-thumbWide.jpg",
+                    "wideheight": "126",
+                    "widewidth": "190"
+                },
+                "type": "image"
+            }, {
+                "width": 600,
+                "url": "images\/2014\/12\/12\/us\/WARPOWERS1\/WARPOWERS1-articleLarge.jpg",
+                "height": 424,
+                "subtype": "xlarge",
+                "legacy": {
+                    "xlargewidth": "600",
+                    "xlarge": "images\/2014\/12\/12\/us\/WARPOWERS1\/WARPOWERS1-articleLarge.jpg",
+                    "xlargeheight": "424"
+                },
+                "type": "image"
+            }, {
+                "width": 75,
+                "url": "images\/2014\/12\/12\/us\/WARPOWERS1\/WARPOWERS1-thumbStandard.jpg",
+                "height": 75,
+                "subtype": "thumbnail",
+                "legacy": {
+                    "thumbnailheight": "75",
+                    "thumbnail": "images\/2014\/12\/12\/us\/WARPOWERS1\/WARPOWERS1-thumbStandard.jpg",
+                    "thumbnailwidth": "75"
+                },
+                "type": "image"
+            }],
+            "headline": {
+                "main": "Senate Panel Approves Limited Fight Against ISIS, Reopening War Powers Debate",
+                "print_headline": "Senate Panel Approves Limited ISIS Fight, Reviving War Powers Debate"
+            },
+            "keywords": [{
+                "rank": "1",
+                "is_major": "N",
+                "name": "subject",
+                "value": "United States Defense and Military Forces"
+            }, {
+                "rank": "2",
+                "is_major": "Y",
+                "name": "organizations",
+                "value": "Islamic State in Iraq and Syria (ISIS)"
+            }, {
+                "rank": "3",
+                "is_major": "Y",
+                "name": "glocations",
+                "value": "United States"
+            }, {
+                "rank": "4",
+                "is_major": "N",
+                "name": "subject",
+                "value": "United States Politics and Government"
+            }, {
+                "rank": "5",
+                "is_major": "N",
+                "name": "subject",
+                "value": "Executive Orders and Memorandums"
+            }, {
+                "rank": "6",
+                "is_major": "N",
+                "name": "organizations",
+                "value": "Senate Committee on Foreign Relations"
+            }, {
+                "rank": "7",
+                "is_major": "N",
+                "name": "persons",
+                "value": "Obama, Barack"
+            }],
+            "pub_date": "2014-12-12T00:00:00Z",
+            "document_type": "article",
+            "news_desk": "National",
+            "section_name": "U.S.",
+            "subsection_name": "Politics",
+            "byline": {
+                "contributor": "",
+                "person": [{
+                    "firstname": "Jeremy",
+                    "middlename": "W.",
+                    "lastname": "PETERS",
+                    "rank": 1,
+                    "role": "reported",
+                    "organization": ""
+                }],
+                "original": "By JEREMY W. PETERS"
+            },
+            "type_of_material": "News",
+            "_id": "548a25ca38f0d8017fa64cfa",
+            "word_count": "1162"
+        }]
+    },
+    "status": "OK",
+    "copyright": "Copyright (c) 2013 The New York Times Company.  All Rights Reserved."
+}
