@@ -2,7 +2,7 @@ $(function () {
            //Find the audio control on the page
            var audio = document.getElementById('ctrlaudio');
            //songNames holds the comma separated name of songs
-           var songNames = "/assets/song1.mp3,/assets/song2.mp3,/assets/song3.mp3,/assets/song4.mp3"
+           var songNames = "http://grandkru.com/song1.mp3,http://grandkru.com/song2.mp3,http://grandkru.com/song3.mp3,http://grandkru.com/song4.mp3"
            var lstsongNames = songNames.split(',');
            var curPlaying = 0;
            // Attaches an event ended and it gets fired when current playing song get ended
