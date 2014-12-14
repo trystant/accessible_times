@@ -19,6 +19,10 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
+    @abstract = "Editorial contends that summary of Senate investigation report into Central Intelligence Agency's torture and illegal detention of prisoners is portrait of depravity; questions why no one has ever been held accountable for these seeming crimes; laments that nothing is likely to be done now, given that Republicans will soon control Senate."
+    @title = "The Senate Report on the C.I.A.'s Torture and Lies"
+    @image_url = "http://www.nytimes.com/images/2014/12/10/opinion/10wed1sub/10wed1sub-articleLarge.jpg"
+    @translate_url_prefix = "http://translate.google.com/translate_tts?tl=en&q="
   end
 
   # GET /articles/new
@@ -73,7 +77,7 @@ class ArticlesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_article
-      @article = Article.find(params[:id])
+      #@article = Article.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
