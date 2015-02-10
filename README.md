@@ -1,4 +1,4 @@
-# Rails Starter App
+# Node App with Drywall
 [![Build Status](https://travis-ci.org/diowa/ruby2-rails4-bootstrap-heroku.svg?branch=master)](https://travis-ci.org/diowa/ruby2-rails4-bootstrap-heroku) [![Dependency Status](https://gemnasium.com/diowa/ruby2-rails4-bootstrap-heroku.svg)](https://gemnasium.com/diowa/ruby2-rails4-bootstrap-heroku) [![Code Climate](https://codeclimate.com/github/diowa/ruby2-rails4-bootstrap-heroku/badges/gpa.svg)](https://codeclimate.com/github/diowa/ruby2-rails4-bootstrap-heroku) [![Coverage Status](https://img.shields.io/coveralls/diowa/ruby2-rails4-bootstrap-heroku.svg)](https://coveralls.io/r/diowa/ruby2-rails4-bootstrap-heroku?branch=master)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
@@ -6,6 +6,7 @@
 
 This is a starter web application based on the following technology stack:
 
+TO-DO: Update tech stack used
 * [Ruby 2.1.4][1]
 * [Rails 4.1.8][2]
 * [Puma][3]
