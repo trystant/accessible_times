@@ -1,110 +1,119 @@
-# Node App with Drywall
-[![Build Status](https://travis-ci.org/diowa/ruby2-rails4-bootstrap-heroku.svg?branch=master)](https://travis-ci.org/diowa/ruby2-rails4-bootstrap-heroku) [![Dependency Status](https://gemnasium.com/diowa/ruby2-rails4-bootstrap-heroku.svg)](https://gemnasium.com/diowa/ruby2-rails4-bootstrap-heroku) [![Code Climate](https://codeclimate.com/github/diowa/ruby2-rails4-bootstrap-heroku/badges/gpa.svg)](https://codeclimate.com/github/diowa/ruby2-rails4-bootstrap-heroku) [![Coverage Status](https://img.shields.io/coveralls/diowa/ruby2-rails4-bootstrap-heroku.svg)](https://coveralls.io/r/diowa/ruby2-rails4-bootstrap-heroku?branch=master)
+Drywall
+=============
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+A website and user system for Node.js. What you create with Drywall is more important than Drywall. [See a bird's eye view.](http://jedireza.github.io/drywall/)
 
+[![Dependency Status](https://david-dm.org/jedireza/drywall.svg?theme=shields.io)](https://david-dm.org/jedireza/drywall)
+[![devDependency Status](https://david-dm.org/jedireza/drywall/dev-status.svg?theme=shields.io)](https://david-dm.org/jedireza/drywall#info=devDependencies)
 
-This is a starter web application based on the following technology stack:
+Technology
+------------
 
-TO-DO: Update tech stack used
-* [Ruby 2.1.4][1]
-* [Rails 4.1.8][2]
-* [Puma][3]
-* [PostgreSQL][4]
-* [RSpec][5]
-* [Twitter Bootstrap for Sass 3.3.1][6]
-* [Autoprefixer][7]
-* [Font Awesome 4.2.0][8]
-* [HAML][9]
+| On The Server | On The Client  | Development |
+| ------------- | -------------- | ----------- |
+| Express       | Bootstrap      | Grunt       |
+| Jade          | Backbone.js    |             |
+| Mongoose      | jQuery         |             |
+| Passport      | Underscore.js  |             |
+| Async         | Font-Awesome   |             |
+| EmailJS       | Moment.js      |             |
 
-[1]: http://www.ruby-lang.org/en/
-[2]: http://rubyonrails.org/
-[3]: http://puma.io/
-[4]: http://www.postgresql.org/
-[5]: http://rspec.info/
-[6]: http://getbootstrap.com/
-[7]: http://github.com/ai/autoprefixer/
-[8]: http://fontawesome.io/
-[9]: http://haml.info/
+Live Demos
+------------
 
-Starter App is deployable on [Heroku](http://www.heroku.com/). Demo: http://ruby2-rails4-bootstrap-heroku.herokuapp.com/
+| Platform                       | Username | Password |
+| ------------------------------ | -------- | -------- |
+| https://drywall.herokuapp.com/ | root     | h3r00t   |
+| https://drywall.nodejitsu.com/ | root     | j1ts00t  |
 
-```Gemfile``` also contains a set of useful gems for performance, security, api building...
+__Note:__ The live demos have been modified so you cannot change the root user, the root user's linked Administrator role or the root Admin Group. This was done in order to keep the app ready to test at all times.
 
-### Thread safety
+Requirements
+------------
 
-We assume that this application is thread safe. If your application is not thread safe or you don't know, please set the minimum and maximum number of threads usable by puma on heroku to 1:
+You need [Node.js](http://nodejs.org/download/) and [MongoDB](http://www.mongodb.org/downloads) installed and running.
 
-```sh
-$ heroku config:set MIN_THREADS=1 MAX_THREADS=1
+We use [Grunt](http://gruntjs.com/) as our task runner. Get the CLI (command line interface).
+
+```bash
+$ npm install grunt-cli -g
 ```
 
-### Heroku Platform API
+We use [`bcrypt`](https://github.com/ncb000gt/node.bcrypt.js) for hashing secrets. If you have issues during installation related to `bcrypt` then [refer to this wiki page](https://github.com/jedireza/drywall/wiki/bcrypt-Installation-Trouble).
 
-This application supports fast setup and deploy via [app.json](https://devcenter.heroku.com/articles/app-json-schema):
+Installation
+------------
 
-```sh
-$ curl -n -X POST https://api.heroku.com/app-setups \
--H "Content-Type:application/json" \
--H "Accept:application/vnd.heroku+json; version=3" \
--d '{"source_blob": { "url":"https://github.com/diowa/ruby2-rails4-bootstrap-heroku/tarball/master/"} }'
+```bash
+$ git clone git@github.com:jedireza/drywall.git && cd ./drywall
+$ npm install
+$ mv ./config.example.js ./config.js #set mongodb and email credentials
+$ grunt
 ```
 
-More information: [Setting Up Apps using the Platform API](https://devcenter.heroku.com/articles/setting-up-apps-using-the-heroku-platform-api)
+Setup
+------------
 
-### Recommended add-ons
+You need a few records in the database to start using the user system.
 
-Heroku's [Production Check](https://blog.heroku.com/archives/2013/4/26/introducing_production_check) recommends the use of the following add-ons, here in the free version:
+Run these commands on mongo. __Obviously you should use your email address.__
 
-```sh
-$ heroku addons:add newrelic:stark # App monitoring
-$ heroku config:set NEW_RELIC_APP_NAME="Rails Starter App" # Set newrelic app name
-$ heroku addons:add papertrail # Log monitoring
-$ heroku addons:add pgbackups:auto-month # Postgres backups
+```js
+use drywall; //your mongo db name
 ```
 
-### Secrets.yml
-
-Rails 4.1.0 introduced [secrets.yml](http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html#config/secrets.yml). Heroku automatically sets a proper configuration variable in new applications. Just in case you need, the command line is:
-
-```sh
-$ heroku config:add SECRET_KEY_BASE="$(bundle exec rake secret)"
+```js
+db.admingroups.insert({ _id: 'root', name: 'Root' });
+db.admins.insert({ name: {first: 'Root', last: 'Admin', full: 'Root Admin'}, groups: ['root'] });
+var rootAdmin = db.admins.findOne();
+db.users.save({ username: 'root', isActive: 'yes', email: 'your@email.addy', roles: {admin: rootAdmin._id} });
+var rootUser = db.users.findOne();
+rootAdmin.user = { id: rootUser._id, name: rootUser.username };
+db.admins.save(rootAdmin);
 ```
 
-**NOTE**: If you need to migrate old cookies, please read the above guide.
+Now just use the reset password feature to set a password.
 
-### Tuning Ruby's RGenGC
+ - `http://localhost:3000/login/forgot/`
+ - Submit your email address and wait a second.
+ - Go check your email and get the reset link.
+ - `http://localhost:3000/login/reset/:email/:token/`
+ - Set a new password.
 
-Generational GC (called RGenGC) was introduced from Ruby 2.1.0. RGenGC reduces marking time dramatically (about x10 faster). However, RGenGC introduce huge memory consumption. This problem has impact especially for small memory machines.
+Login. Customize. Enjoy.
 
-Ruby 2.1.1 introduced new environment variable RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR to control full GC timing. By setting this variable to a value lower than the default of 2 (we are using the suggested value of 1.3) you can indirectly force the garbage collector to perform more major GCs, which reduces heap growth.
+Philosophy
+------------
 
-```sh
-$ heroku config:set RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR=1.3
-```
+ - Create a website and user system.
+ - Write code in a simple and consistent way.
+ - Only create minor utilities or plugins to avoid repetitiveness.
+ - Find and use good tools.
+ - Use tools in their native/default behavior.
 
-More information: [Change the full GC timing](https://bugs.ruby-lang.org/issues/9607)
+Features
+------------
 
-### Nitrous.IO
+ - Basic front end web pages.
+ - Contact page has form to email.
+ - Login system with forgot password and reset password.
+ - Signup and Login with Facebook, Twitter, GitHub, Google and Tumblr.
+ - Optional email verification during signup flow.
+ - User system with separate account and admin roles.
+ - Admin groups with shared permission settings.
+ - Administrator level permissions that override group permissions.
+ - Global admin quick search component.
 
-Starter App supports online development on [Nitrous.IO](http://www.nitrous.io).
+Contributing
+------------
 
-You need:
-* A Nitrous.IO box with **at least** 512MB of memory.
-* Two "Dev Plan" heroku databases (one for development and one for test)
-* The following environment variables on your Nitrous.IO box's `.bashrc`:
-  ```bash
-  export STARTER_APP_DEV_DB_DATABASE=YOUR_DEV_DB_DATABASE
-  export STARTER_APP_DEV_DB_USER=YOUR_DEV_DB_USER
-  export STARTER_APP_DEV_DB_PASSWORD=YOUR_DEV_DB_PASSWORD
-  export STARTER_APP_DEV_DB_HOST=YOUR_DEV_DB_HOST
-  export STARTER_APP_DEV_DB_PORT=YOUR_DEV_DB_PORT
+Contributions welcome. Make sure your code passes `grunt lint` without error.
 
-  export STARTER_APP_TEST_DB_DATABASE=YOUR_TEST_DB_DATABASE
-  export STARTER_APP_TEST_DB_USER=YOUR_TEST_DB_USER
-  export STARTER_APP_TEST_DB_PASSWORD=YOUR_TEST_DB_PASSWORD
-  export STARTER_APP_TEST_DB_HOST=YOUR_TEST_DB_HOST
-  export STARTER_APP_TEST_DB_PORT=YOUR_TEST_DB_PORT
-  ```
+If you're changing something non-trivial or user-facing, you may want to submit an issue first.
 
-A guide for creating heroku databases and edit `.bashrc` on Nitrous.IO is available here: http://help.nitrous.io/postgres/
+License
+------------
+
+MIT
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/d41f60f22a2148e2e2dc6b705cd01481 "githalytics.com")](http://githalytics.com/jedireza/drywall)
