@@ -13,6 +13,7 @@ exports.send = function(req, res, next){
   var workflow = req.app.utility.workflow(req, res);
 
   workflow.on('validate', function() {
+    console.log("validate!");
     if (!req.body.email) {
       workflow.outcome.errfor.email = 'required';
       return workflow.emit('response');
@@ -22,6 +23,7 @@ exports.send = function(req, res, next){
   });
 
   workflow.on('generateToken', function() {
+    console.log("Generate Token!");
     var crypto = require('crypto');
     crypto.randomBytes(21, function(err, buf) {
       if (err) {
@@ -40,6 +42,7 @@ exports.send = function(req, res, next){
   });
 
   workflow.on('patchUser', function(token, hash) {
+    console.log("Finding User!");
     var conditions = { email: req.body.email.toLowerCase() };
     var fieldsToSet = {
       resetPasswordToken: hash,
@@ -47,10 +50,14 @@ exports.send = function(req, res, next){
     };
     req.app.db.models.User.findOneAndUpdate(conditions, fieldsToSet, function(err, user) {
       if (err) {
+        console.log("Error sending user" + err);
         return workflow.emit('exception', err);
       }
 
       if (!user) {
+        console.log("Error finding user: return message is " + err);
+        console.log("Error finding user: email = " + req.body.email.toLowerCase());
+        console.log("Error finding user: hash = " + hash);
         return workflow.emit('response');
       }
 
@@ -59,6 +66,7 @@ exports.send = function(req, res, next){
   });
 
   workflow.on('sendEmail', function(token, user) {
+    console.log("Sending email!");
     req.app.utility.sendmail(req, res, {
       from: req.app.config.smtp.from.name +' <'+ req.app.config.smtp.from.address +'>',
       to: user.email,

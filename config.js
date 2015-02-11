@@ -2,7 +2,7 @@
 
 exports.port = process.env.PORT || 3000;
 exports.mongodb = {
-  uri: process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost:27017/accessible_times'
+  uri: process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost:27017/drywall'
 };
 exports.companyName = 'Grand Kru Technologies, LLC';
 exports.projectName = 'Accessible Times';
@@ -17,12 +17,12 @@ exports.requireAccountVerification = false;
 exports.smtp = {
   from: {
     name: process.env.SMTP_FROM_NAME || exports.projectName +' Website',
-    address: process.env.SMTP_FROM_ADDRESS || 'your@email.addy'
+    address: process.env.SMTP_FROM_ADDRESS || 'mark@grandkru.com'
   },
   credentials: {
-    user: process.env.SMTP_USERNAME || 'your@email.addy',
-    password: process.env.SMTP_PASSWORD || 'bl4rg!',
-    host: process.env.SMTP_HOST || 'smtp.gmail.com',
+    user: process.env.SMTP_USERNAME || 'mark@grandkru.com',
+    password: process.env.SMTP_PASSWORD || 'juRa$$ic',
+    host: process.env.SMTP_HOST || 'mnyon.mail.pairserver.com',
     ssl: true
   }
 };
