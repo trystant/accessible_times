@@ -71,16 +71,16 @@
       this.addNew();
     },
     addNew: function() {
-      if (this.$el.find('[url="headline"]').val() === '') {
+      if (this.$el.find('[name="headline"]').val() === '') {
         alert('Please enter a headline.');
       }
-      else if (this.$el.find('[url="url"]').val() === '') {
+      else if (this.$el.find('[name="url"]').val() === '') {
         alert('Please enter a url.');
       }
       else {
         this.model.save({
-          headline: this.$el.find('[url="headline"]').val(),
-          url: this.$el.find('[url="url"]').val()
+          headline: this.$el.find('[name="headline"]').val(),
+          url: this.$el.find('[name="url"]').val()
         },{
           success: function(model, response) {
             if (response.success) {

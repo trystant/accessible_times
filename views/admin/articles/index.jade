@@ -22,7 +22,7 @@ block body
       form.form-inline.pull-right
         div.input-group
           input.form-control(name='headline', type='text', placeholder='headline', value!='<%= headline %>')
-          input.form-control(name='url', type='text', placeholder='url', value!='<%= name %>')
+          input.form-control(name='url', type='text', placeholder='url', value!='<%= url %>')
           button.btn.btn-primary.btn-add(type='button') Add New
       h1 Articles
 
@@ -30,10 +30,10 @@ block body
     form.filters
       div.row
         div.col-sm-3
-          label Pivot Search
+          label Headline Search
           input.form-control(name='headline', type='text')
         div.col-sm-3
-          label Name Search
+          label URL Search
           input.form-control(name='url', type='text')
         div.col-sm-3
           label Sort By
