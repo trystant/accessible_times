@@ -21,8 +21,8 @@ block body
     div.page-header
       form.form-inline.pull-right
         div.input-group
-          input.form-control(name='pivot', type='text', placeholder='pivot', value!='<%= pivot %>')
-          input.form-control(name='name', type='text', placeholder='name', value!='<%= name %>')
+          input.form-control(name='headline', type='text', placeholder='headline', value!='<%= headline %>')
+          input.form-control(name='url', type='text', placeholder='url', value!='<%= name %>')
           button.btn.btn-primary.btn-add(type='button') Add New
       h1 Articles
 
@@ -31,17 +31,17 @@ block body
       div.row
         div.col-sm-3
           label Pivot Search
-          input.form-control(name='pivot', type='text')
+          input.form-control(name='headline', type='text')
         div.col-sm-3
           label Name Search
-          input.form-control(name='name', type='text')
+          input.form-control(name='url', type='text')
         div.col-sm-3
           label Sort By
           select.form-control(name='sort')
             option(value='_id') id &#9650;
             option(value='-_id') id &#9660;
-            option(value='name') name &#9650;
-            option(value='-name') name &#9660;
+            option(value='url') name &#9650;
+            option(value='-headline') name &#9660;
         div.col-sm-3
           label Limit
           select.form-control(name='limit')
@@ -55,16 +55,16 @@ block body
       thead
         tr
           th
-          th pivot
-          th.stretch name
+          th headline
+          th.stretch url
           th id
       tbody#results-rows
 
   script(type='text/template', id='tmpl-results-row')
     td
       input.btn.btn-default.btn-sm.btn-details(type='button', value='Edit')
-    td <%- pivot %>
-    td <%- name %>
+    td <%- headline %>
+    td <%- url %>
     td.nowrap <%= _id %>
 
   script(type='text/template', id='tmpl-results-empty-row')

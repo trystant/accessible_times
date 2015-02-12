@@ -17,7 +17,7 @@ exports.find = function(req, res, next){
 
   req.app.db.models.Article.pagedFind({
     filters: filters,
-    keys: 'headline name',
+    keys: 'headline url',
     limit: req.query.limit,
     page: req.query.page,
     sort: req.query.sort
@@ -68,7 +68,7 @@ exports.create = function(req, res, next){
     }
 
     if (!req.body.url) {
-      workflow.outcome.errors.push('A name is required.');
+      workflow.outcome.errors.push('A url is required.');
       return workflow.emit('response');
     }
 
@@ -94,7 +94,7 @@ exports.create = function(req, res, next){
     var fieldsToSet = {
       _id: req.app.utility.slugify(req.body.headline +' '+ req.body.url),
       headline: req.body.headline,
-      name: req.body.url
+      url: req.body.url
     };
 
     req.app.db.models.Article.create(fieldsToSet, function(err, article) {
@@ -135,7 +135,7 @@ exports.update = function(req, res, next){
   workflow.on('patchArticle', function() {
     var fieldsToSet = {
       headline: req.body.headline,
-      name: req.body.url
+      url: req.body.url
     };
 
     req.app.db.models.Article.findByIdAndUpdate(req.params.id, fieldsToSet, function(err, article) {
