@@ -12,7 +12,8 @@ var config = require('./config'),
     passport = require('passport'),
     mongoose = require('mongoose'),
     helmet = require('helmet'),
-    csrf = require('csurf');
+    csrf = require('csurf'),
+    cool = require('cool-ascii-faces');
 
 //create express app
 var app = express();
