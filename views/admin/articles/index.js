@@ -41,13 +41,16 @@ exports.find = function(req, res, next){
 exports.read = function(req, res, next){
   req.app.db.models.Article.findById(req.params.id).exec(function(err, article) {
     if (err) {
+      console.log("No luck with article " + req.params.id);
       return next(err);
     }
 
     if (req.xhr) {
+      console.log("No luck with article " + req.params.id);
       res.send(article);
     }
     else {
+      console.log("Luck with article " + req.params.id);
       res.render('admin/articles/details', { data: { record: escape(JSON.stringify(article)) } });
     }
   });

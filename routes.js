@@ -151,6 +151,9 @@ exports = module.exports = function(app, passport) {
   app.all('/account*', ensureAccount);
   app.get('/account/', require('./views/account/index').init);
 
+  // articles
+  app.get('/articles/*', require('./views/articles/index').read);
+
   //account > verification
   app.get('/account/verification/', require('./views/account/verification/index').init);
   app.post('/account/verification/', require('./views/account/verification/index').resendVerification);

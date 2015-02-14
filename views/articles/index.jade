@@ -1,0 +1,67 @@
+extends ../../layouts/default
+
+block head
+  title Accessible Times Article
+
+block neck
+  link(rel='stylesheet', href='/views/articles/index.min.css?#{cacheBreaker}')
+
+block body
+  div.content
+    div.row
+      div.col-sm-6
+        div.page-header
+          h1 F.B.I. Director Speaks Frankly About Police View of Blacks
+        div.media
+          h1 WASHINGTON — The F.B.I. director, James B. Comey, on Thursday delivered an unusually frank speech about the relationship between the police and black people
+          h1 saying that officers who work in neighborhoods where blacks commit crimes at higher rates develop a cynicism that shades their attitudes about race. 
+          h1 He said that officers — whether they are white or any other race — who are confronted with white men on one side of the street and black men on the other 
+          h1 do not view them the same way. The officers develop a mental shortcut that “becomes almost irresistible and maybe even rational by some lights”
+          h1 because of the number of black suspects they have arrested. 
+          h1 “We need to come to grips with the fact that this behavior complicates the relationship between police and the communities they serve,” 
+          h1 Mr. Comey said in the speech, at Georgetown University.
+          h1 While officers should be closely scrutinized, he said, they are “not the root cause of problems in our hardest-hit neighborhoods,
+          h1 ” where blacks grow up “in environments lacking role models, adequate education and decent employment.” 
+          h1 “They lack all sorts of opportunities that most of us take for granted,” Mr. Comey said.
+          h1 Mr. Comey’s speech was unprecedented for an F.B.I. director. Previous directors have limited their public comments about race to civil rights investigations
+          h1 like those of murders committed by the Ku Klux Klan and how the bureau wiretapped the Rev. Dr. Martin Luther King Jr.
+          h1 The surveillance of Dr. King is considered one of the F.B.I.’s greatest overreaches of power. 
+          h1 Mr. Comey, who has led the F.B.I. for about 18 months, has said that as part of his job
+          h1 he wants to foster a national debate about law enforcement issues that state and local authorities across the country are facing.
+          h1 He said that he decided to give the speech because he felt that in the aftermath of the shooting of Michael Brown
+          h1 an unarmed 18-year-old black man, by a white police officer in Ferguson, Mo., the country had not “had a healthy dialogue,” and that he did not “want to see those important issues drift away.
+          h1 ”One remedy, Mr. Comey said, would be for the police to have more interactions with those they are charged to protect. “It’s hard to hate up close,” he said.
+          h1 Mr. Comey said there was significant research that says all people have unconscious racial biases. Although people cannot help their instinctive reactions, law enforcement needs “to design systems and processes to overcome that very human part of us all,” he said.
+          h1 “Although the research may be unsettling, what we do next is what matters most,” Mr. Comey said. 
+          h1 He said that law enforcement agencies across the country needed to be compelled to report shootings that involve police officers so there can be a baseline to measure the issue. 
+          h1 “It’s ridiculous that I can’t tell you how many people were shot by the police last week, last month, last year,” Mr. Comey said. 
+          h1 In addressing race relations, Mr. Comey was trying to do something that politicians and law enforcement leaders — including his boss, Attorney General Eric H. Holder Jr. — have failed to do without creating significant backlash. 
+          h1 After the fatal shooting in Ferguson, Mr. Holder was widely criticized by police organizations and Republicans for a series of comments he made that were seen as unfairly critical of the police.
+          h1 Before the results of an investigation into the Ferguson Police Department were complete, Mr. Holder said that the department needed wholesale changes, that he stood with the people of Ferguson and that he had been profiled by the police. 
+          h1 Mayor Bill de Blasio of New York faced a crisis with his police department for comments he made after a grand jury on Staten Island declined to indict a police officer whose chokehold led to the death of an unarmed black man. 
+          h1 Officers also stopped enforcing low levels crimes.
+          h1 Mr. de Blasio said that he and his wife, Chirlane McCray, had instructed their son, Dante, who is biracial
+          h1 “on how to take special care” during his interactions with the police. 
+          h1 The mayor said that he worried about whether his son was safe at night. The police responded by turning their backs on Mr. de Blasio at the memorial services for two police officers who were killed in December.
+          h1 Mr. Comey has shown a willingness to weigh in aggressively on race issues as far back as college.
+      div.col-sm-6.special
+        div.page-header
+          h2 The image below will be clickable
+        p.lead making reading easier
+        a.pressPlay
+          i.fa.fa-volume-up.super-awesome
+  div.test
+    script(type='text/javascript').
+      var elements = document.getElementsByTagName('h1')
+      for (var i = 0; i < elements.length; i++) {
+        if (window.speechSynthesis !== undefined) {
+          var text = elements[i].innerHTML
+          var utterance = new SpeechSynthesisUtterance(text)
+          console.log("Utterance Instance Text: " + text);
+          speechUtteranceChunker(utterance, {chunkLength: 160}, function () {
+            //some code to execute when done
+            console.log('done')
+          })
+        }
+      }
+

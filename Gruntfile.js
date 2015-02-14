@@ -61,6 +61,12 @@ module.exports = function(grunt) {
             'node_modules/**',
             'public/**'
           ],
+          nodeArgs: ['--debug'],
+          callback: function (nodemon) {
+            nodemon.on('log', function (event) {
+              console.log(event.colour);
+            });
+          },
           ext: 'js'
         }
       }
@@ -120,7 +126,8 @@ module.exports = function(grunt) {
             'public/vendor/bootstrap/js/tab.js',
             'public/vendor/bootstrap/js/transition.js',
             'public/vendor/momentjs/moment.js',
-            'public/layouts/core.js'
+            'public/layouts/core.js',
+            'public/layouts/chunkify.js'
           ],
           'public/layouts/ie-sucks.min.js': [
             'public/vendor/html5shiv/html5shiv.js',

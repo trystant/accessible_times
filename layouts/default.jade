@@ -5,6 +5,8 @@ html
       title #{title}
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet', href='/layouts/core.min.css?#{cacheBreaker}')
+    //- Placed here for short term solution
+    script(src='/layouts/chunkify.js?#{cacheBreaker}')
     block neck
   body
     div.navbar.navbar-default.navbar-fixed-top
@@ -20,9 +22,9 @@ html
         div.navbar-collapse.my-navbar-collapse.collapse
           ul.nav.navbar-nav
             li: a(href='/') Home
-            li: a(href='/about/') About
-            li: a(href='/signup/') Sign Up
-            li: a(href='/contact/') Contact
+            //- li: a(href='/about/') About
+            //- li: a(href='/signup/') Sign Up
+            //- li: a(href='/contact/') Contact
           ul.nav.navbar-nav.navbar-right
             if user && user.username
               li: a(href='#{user.defaultReturnUrl}')
@@ -52,5 +54,4 @@ html
     //if lte IE 9
       script(src='/layouts/ie-sucks.min.js?#{cacheBreaker}')
     script(src='/layouts/core.min.js?#{cacheBreaker}')
-
     block feet

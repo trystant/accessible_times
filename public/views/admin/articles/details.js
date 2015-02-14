@@ -90,8 +90,8 @@
     },
     update: function() {
       this.model.save({
-        headline: this.$el.find('[url="headline"]').val(),
-        url: this.$el.find('[url="url"]').val()
+        headline: this.$el.find('[name="headline"]').val(),
+        url: this.$el.find('[name="url"]').val()
       });
     }
   });

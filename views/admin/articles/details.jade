@@ -33,13 +33,13 @@ block body
           button.close(type='button', data-dismiss='alert') &times;
           | Changes have been saved.
         |<% } %>
-      div.form-group(class!='<%- errfor.pivot ? "has-error" : "" %>')
-        label Pivot:
-        input.form-control(type='text', name='pivot', value!='<%- pivot %>')
-        span.help-block <%- errfor.pivot %>
+      div.form-group(class!='<%- errfor.headline ? "has-error" : "" %>')
+        label Headline:
+        input.form-control(type='text', name='headline', value!='<%- headline %>')
+        span.help-block <%- errfor.headline %>
       div.form-group(class!='<%- errfor.name ? "has-error" : "" %>')
-        label Name:
-        input.form-control(type='text', name='name', value!='<%- name %>')
+        label Url:
+        input.form-control(type='text', name='url', value!='<%- url %>')
         span.help-block <%- errfor.name %>
       div.form-group
         button.btn.btn-primary.btn-update(type='button') Update
