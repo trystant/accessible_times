@@ -6,6 +6,9 @@ block head
 block neck
   link(rel='stylesheet', href='/views/articles/index.min.css?#{cacheBreaker}')
 
+block feet
+  script(src='/views/articles/index.min.js?#{cacheBreaker}')
+
 block body
   div.content
     div.row
@@ -61,19 +64,25 @@ block body
           h1 “We all need to talk, and we all need to listen, not just about easy things, but about hard things, too. 
           h1 Relationships are hard. Relationships require work. So let’s begin. It is time to start seeing one another for who and what we really are.”
 
+      div.col-sm-6.special
+        div.page-header
+          h2 The image below will be clickable
+        p.lead making reading easier
+        a.pressPlay
+          i.fa.fa-volume-up.super-awesome
   div.test
-    script(type='text/javascript').
-      var elements = document.getElementsByTagName('h1')
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].scrollIntoView(true)
-        if (window.speechSynthesis !== undefined) {
-          var text = elements[i].innerHTML
-          var utterance = new SpeechSynthesisUtterance(text)
-          console.log("Utterance Instance Text: " + text);
-          speechUtteranceChunker(utterance, {chunkLength: 160}, function () {
-            //some code to execute when done
-            console.log('done')
-          })
-        }
-      }
+    //- script(type='text/javascript').
+    //-   var elements = document.getElementsByTagName('h1')
+    //-   for (var i = 0; i < elements.length; i++) {
+    //-     elements[i].scrollIntoView(true)
+    //-     if (window.speechSynthesis !== undefined) {
+    //-       var text = elements[i].innerHTML
+    //-       var utterance = new SpeechSynthesisUtterance(text)
+    //-       console.log("Utterance Instance Text: " + text);
+    //-       speechUtteranceChunker(utterance, {chunkLength: 160}, function () {
+    //-         //some code to execute when done
+    //-         console.log('done')
+    //-       })
+    //-     }
+    //-   }
 

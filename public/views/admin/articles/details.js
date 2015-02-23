@@ -131,7 +131,6 @@
     initialize: function() {
       app.mainView = this;
       this.model = new app.Article( JSON.parse( unescape($('#data-record').html()) ) );
-
       app.headerView = new app.HeaderView();
       app.detailsView = new app.DetailsView();
       app.deleteView = new app.DeleteView();

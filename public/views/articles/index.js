@@ -19,7 +19,6 @@
 
   app.ArticleView = Backbone.View.extend({
     el: '.content',
-    template: _.template( $('#tmpl-header').html() ),
     events: {
       'click .pressPlay': 'playAudio'
     },
@@ -27,21 +26,17 @@
       this.setElement(this.$(selector)).render();
     },
     initialize: function() {
-      this.listenTo(this.model, 'sync', this.render);
       this.render();
     },
     playAudio: function (argument) {
-      // TODO: Figure out how to implement this audio callback
+      console.log("pressPlay activated!");
     },
     render: function() {
-      this.$el.html(this.template( this.model.attributes ));
-      return this
+      return this;
     }
   });
 
   $(document).ready(function() {
-    app.firstLoad = true;
-    app.router = new app.Router();
-    Backbone.history.start();
+    app.ArticleView = new app.ArticleView();
   });
 }());
