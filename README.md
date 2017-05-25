@@ -45,7 +45,7 @@ Installation
 ------------
 
 ```bash
-$ git clone git@github.com:jedireza/drywall.git && cd ./drywall
+$ git clone git@github.com:trystant/accessible_times.git && cd ./accessible_times
 $ npm install
 $ mv ./config.example.js ./config.js #set mongodb and email credentials
 $ grunt
